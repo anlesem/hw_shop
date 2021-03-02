@@ -117,7 +117,8 @@ body {
     background-color: rgba(33, 22, 22, 0.7);
 }
 
-.offers__image {
+.offers__item::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -126,15 +127,15 @@ body {
     z-index: -1;
 }
 
-.offers__image--woman {
+.offers__item--woman::after {
     background-image: url(../img/offerImage01.png);
 }
 
-.offers__image--man {
+.offers__item--man::after {
     background-image: url(../img/offerImage02.png);
 }
 
-.offers__image--kids {
+.offers__item--kids::after {
     background-image: url(../img/offerImage03.png);
 }
 
@@ -144,7 +145,7 @@ body {
     margin: 0;
 }
 
-.offers__image--accesories {
+.offers__item--accesories::after {
     background-image: url(../img/offerImage04.png);
 }
 
@@ -233,7 +234,7 @@ body {
     background-color: #222;
 }
 
-.feature > .container {
+.feature>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -263,7 +264,7 @@ body {
     min-height: 448px;
 }
 
-.feedback > .container {
+.feedback>.container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -325,7 +326,7 @@ body {
     background-color: #222;
 }
 
-.footer > .container {
+.footer>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
