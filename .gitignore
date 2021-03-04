@@ -4,6 +4,5 @@
 /bower_components/
 /node_modules/
 .vscode/
-scss/
-*.map
-.vscode/settings.json
+css/style_.css
+css/reset_.css
