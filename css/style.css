@@ -28,8 +28,10 @@ body {
     clip: rect(0 0 0 0);
 }
 
+
 .header {
     background-color: var(--dark);
+    position: relative;
 }
 
 .header .container {
@@ -41,6 +43,15 @@ body {
 
 .header__logo {
     margin-right: 41px;
+}
+
+.header__icon-redrow {
+    fill: #e8e8e8;
+}
+
+.header__icon-redrow:hover {
+    fill: var(--dark-pink);
+    cursor: pointer;
 }
 
 .header__user {
@@ -55,10 +66,76 @@ body {
 
 .header__menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 765px;
+    background-color: rgba(33, 22, 22, 0.7);
+    z-index: 1;
 }
+
+.menu__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    width: 230px;
+    height: 100%;
+    padding: 37px 34px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.header__menu-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.header__menu-close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.header__menu-list {
+    margin-top: 24px;
+}
+
+.header__menu-head {
+    margin: 20px 0 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--dark-pink);
+}
+
+.header__menu-item {
+    margin: 11px 0 0 20px;
+}
+
+.header__menu-item>a {
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6e6e6e;
+}
+
+.header__menu-item>a:hover {
+    opacity: 0.6;
+}
+
+.display-block {
+    display: block;
+}
+
 
 .brand {
     background-color: var(--pink);
+    position: relative;
 }
 
 .brand .container {
@@ -186,10 +263,42 @@ body {
 }
 
 .product__items {
+    position: relative;
     width: 360px;
     background-color: #f8f8f8;
     margin-bottom: 30px;
     text-align: left;
+}
+
+.product__overlaeyer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(33, 22, 22, 0.7);
+    opacity: 0;
+}
+
+.product__button-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+}
+
+.product__overlaeyer:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .product__info {
@@ -227,6 +336,14 @@ body {
 
 .product__button-text {
     color: #ff6a6a;
+}
+
+.product__button:hover {
+    background-color: #ff6a6a;
+}
+
+.product__button:hover .product__button-text {
+    color: #fff;
 }
 
 .feature {
@@ -304,8 +421,13 @@ body {
     text-transform: uppercase;
 }
 
-.feedback__subscribe-input {
+.feedback__subscribe-wrapper {
+    display: flex;
+    justify-content: center;
     margin-top: 32px;
+}
+
+.feedback__subscribe-input {
     padding: 18px 64px 18px 22px;
     background-color: #e1e1e1;
     border: 0;
@@ -320,6 +442,144 @@ body {
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     color: white;
+}
+
+.feedback__subscribe-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.registration {
+    background-color: #F8F3F4;
+}
+
+.registration__head {
+    padding: 60px 0;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--dark-pink);
+}
+
+.registration__wrapper {
+    margin: 64px 0 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration__form-field {
+    width: 360px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: #222;
+}
+
+.registration__form-up {
+    margin-bottom: 31px;
+}
+
+.registration__form-down {
+    margin: 35px 0 39px;
+}
+
+.registration__form-input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 17px;
+    box-sizing: border-box;
+    border: 1px solid #a4a4a4;
+}
+
+::-webkit-input-placeholder {
+    color: #b1b1b1;
+}
+
+::-moz-placeholder {
+    color: #b1b1b1;
+}
+
+/* Firefox 19+ */
+:-ms-input-placeholder {
+    color: #b1b1b1
+}
+
+.registration__form-radio {
+    display: none;
+}
+
+.registration__form-label {
+    position: relative;
+    margin: 50px 20px 0 25px;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    color: #000;
+}
+
+.registration__form-label::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -25px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #a4a4a4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.registration__form-radio:checked+.registration__form-label::before {
+    background-color: var(--dark-pink);
+}
+
+.registration__form-text {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #b1b1b1;
+}
+
+.registration__form-button {
+    text-transform: uppercase;
+    padding: 17px 29px;
+    border: 0;
+    color: #fff;
+    background-color: var(--dark-pink);
+}
+
+.registration__form-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.registration__loyalty {
+    width: 650px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.loyalty__head {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.loyalty__text {
+    margin-top: 22px;
+}
+
+.loyalty__list {
+    margin-top: 16px;
+    padding-left: 42px;
+    background-image: url(../img/loyalty_ok.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+
 }
 
 .footer {
@@ -340,4 +600,14 @@ body {
 
 .footer__icon {
     margin-right: 5px;
+}
+
+.footer__svg-color {
+    background-color: #fff;
+    fill: #222;
+}
+
+.footer__svg-color:hover {
+    background-color: var(--dark-pink);
+    fill: #fff;
 }

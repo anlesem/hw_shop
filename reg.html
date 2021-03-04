@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +32,7 @@
     <header class="header">
         <div class="container">
             <div>
-                <a href="#">
+                <a href="index.html">
                     <img class="header__logo" src="img/header_logo.png" alt="Логотип" width="44" height="38">
                 </a>
                 <svg class="header__icon-redrow" width="27" height="28">
@@ -45,7 +45,7 @@
                         <use href="#icon__menu" />
                     </svg>
                 </button>
-                <a href="reg.html">
+                <a href="#">
                     <svg class="header__icon-redrow header__user" width="29" height="29">
                         <use href="#icon__user" />
                     </svg>
@@ -98,176 +98,49 @@
         </div>
     </header>
     <main>
-        <section class="brand">
+        <section class="registration">
             <div class="container">
-                <div class="brand__photo">
-                    <img src="img/mainPhoto.png" alt="Основное изображение" width="400" height="764">
-                </div>
-                <div class="brand__name">
-                    <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
-                                class="brand__subtitle-pink">fashion</span></span></h1>
-                </div>
+                <h1 class="registration__head">registration</h1>
             </div>
         </section>
-        <section class="offers container">
-            <h2 class="visually-hidden">Offers</h2>
-            <ul class="offers__list">
-                <li class="offers__item offers__item--woman">
-                    <div>
-                        <h3 class="offers__head">30% off</h3>
-                        <p class="offers__text">for women</p>
+        <section>
+            <div class="container">
+                <!--            H2 скрытый. Для SEO         -->
+                <h2 class="visually-hidden">subregistration</h2>
+                <div class="registration__wrapper">
+                    <form action="">
+                        <fieldset class="registration__form-field registration__form-up">
+                            <legend>Your Name</legend>
+                            <input class="registration__form-input" type="text" placeholder="First Name">
+                            <input class="registration__form-input" type="text" placeholder="Last Name">
+                        </fieldset>
+                        <input type="radio" name="sex" class="registration__form-radio" id="sex__male">
+                        <label class="registration__form-label" for="sex__male">Male</label>
+                        <input type="radio" name="sex" class="registration__form-radio" id="sex__female">
+                        <label class="registration__form-label" for="sex__female">Female</label>
+                        <fieldset class="registration__form-field registration__form-down">
+                            <legend>Login details</legend>
+                            <input class="registration__form-input" type="email" placeholder="Email">
+                            <input class="registration__form-input" type="password" placeholder="Password">
+                            <p class="registration__form-text">Please use 8 or more characters, with at least 1 number
+                                and a mixture of uppercase and lowercase letters</p>
+                        </fieldset>
+                        <button type="submit" class="registration__form-button">join now &nbsp; →</button>
+                    </form>
+                    <div class="registration__loyalty">
+                        <h2 class="loyalty__head">loyalty has its perks</h2>
+                        <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting
+                            with these as soon as you join:</p>
+                        <ul>
+                            <li class="loyalty__list">15% off welcome offer</li>
+                            <li class="loyalty__list">Free shipping, returns and exchanges on all orders</li>
+                            <li class="loyalty__list">$10 off a purchase on your birthday</li>
+                            <li class="loyalty__list">Early access to products</li>
+                            <li class="loyalty__list">Exclusive offers & rewards</li>
+                        </ul>
                     </div>
-                </li>
-                <li class="offers__item offers__item--man">
-                    <div>
-                        <h3 class="offers__head">hot deal</h3>
-                        <p class="offers__text">for men</p>
-                    </div>
-                </li>
-                <li class="offers__item offers__item--kids">
-                    <div>
-                        <h3 class="offers__head">new arrivals</h3>
-                        <p class="offers__text">for kids</p>
-                    </div>
-                </li>
-                <li class="offers__item offers__item--accesories">
-                    <div>
-                        <h3 class="offers__head">luxirous & trendy</h3>
-                        <p class="offers__text">accesories</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="product container">
-            <h2 class="product__head">Featured Items</h2>
-            <p class="product__subhead">Shop for items based on what we featured in this week</p>
-            <ul class="product__wrapper">
-                <li class="product__items">
-                    <img src="img/product_photo_01.png" alt="Фотография товара" width="360" height="420">
-                    <div class="product__overlaeyer">
-                        <div class="product__button-cart">
-                            <img src="img/header_cart.svg" alt="Добавить в корзину" width="26" height="24">
-                            <p>Add to Cart</p>
-                        </div>
-                    </div>
-                    <div class="product__info">
-                        <h3 class="product__info-head">ellery x m'o capsule</h3>
-                        <p class="product__info-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__info-price">$52.00</p>
-                    </div>
-                </li>
-                <li class="product__items">
-                    <img src="img/product_photo_02.png" alt="Фотография товара" width="360" height="420">
-                    <div class="product__overlaeyer">
-                        <div class="product__button-cart">
-                            <img src="img/header_cart.svg" alt="Добавить в корзину" width="26" height="24">
-                            <p>Add to Cart</p>
-                        </div>
-                    </div>
-                    <div class="product__info">
-                        <h3 class="product__info-head">ellery x m'o capsule</h3>
-                        <p class="product__info-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__info-price">$52.00</p>
-                    </div>
-                </li>
-                <li class="product__items">
-                    <img src="img/product_photo_03.png" alt="Фотография товара" width="360" height="420">
-                    <div class="product__overlaeyer">
-                        <div class="product__button-cart">
-                            <img src="img/header_cart.svg" alt="Добавить в корзину" width="26" height="24">
-                            <p>Add to Cart</p>
-                        </div>
-                    </div>
-                    <div class="product__info">
-                        <h3 class="product__info-head">ellery x m'o capsule</h3>
-                        <p class="product__info-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__info-price">$52.00</p>
-                    </div>
-                </li>
-                <li class="product__items">
-                    <img src="img/product_photo_04.png" alt="Фотография товара" width="360" height="420">
-                    <div class="product__overlaeyer">
-                        <div class="product__button-cart">
-                            <img src="img/header_cart.svg" alt="Добавить в корзину" width="26" height="24">
-                            <p>Add to Cart</p>
-                        </div>
-                    </div>
-                    <div class="product__info">
-                        <h3 class="product__info-head">ellery x m'o capsule</h3>
-                        <p class="product__info-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__info-price">$52.00</p>
-                    </div>
-                </li>
-                <li class="product__items">
-                    <img src="img/product_photo_05.png" alt="Фотография товара" width="360" height="420">
-                    <div class="product__overlaeyer">
-                        <div class="product__button-cart">
-                            <img src="img/header_cart.svg" alt="Добавить в корзину" width="26" height="24">
-                            <p>Add to Cart</p>
-                        </div>
-                    </div>
-                    <div class="product__info">
-                        <h3 class="product__info-head">ellery x m'o capsule</h3>
-                        <p class="product__info-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__info-price">$52.00</p>
-                    </div>
-                </li>
-                <li class="product__items">
-                    <img src="img/product_photo_06.png" alt="Фотография товара" width="360" height="420">
-                    <div class="product__overlaeyer">
-                        <div class="product__button-cart">
-                            <img src="img/header_cart.svg" alt="Добавить в корзину" width="26" height="24">
-                            <p>Add to Cart</p>
-                        </div>
-                    </div>
-                    <div class="product__info">
-                        <h3 class="product__info-head">ellery x m'o capsule</h3>
-                        <p class="product__info-text">Known for her sculptural takes on traditional tailoring,
-                            Australian arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="product__info-price">$52.00</p>
-                    </div>
-                </li>
-            </ul>
-            <button class="product__button">
-                <a class="product__button-text" href="#">Browse All Product</a>
-            </button>
-        </section>
-        <section class="feature">
-            <!--            H6 скрытый. Для SEO         -->
-            <h2 class="visually-hidden">feature</h2>
-            <ul class="container">
-                <li>
-                    <img src="img/feature_delivery.svg" alt="Доставка">
-                    <h3 class="feature__head">Free Delivery</h3>
-                    <p class="feature__text">Worldwide delivery on all. Authorit tively morph
-                        <wbr> next-generation innov tion with extensive models.</p>
-                </li>
-                <li>
-                    <img src="img/feature_sales.svg" alt="Скидки">
-                    <h3 class="feature__head">Sales & discounts</h3>
-                    <p class="feature__text">Worldwide delivery on all. Authorit tively morph
-                        <wbr> next-generation innov tion with extensive models.</p>
-                </li>
-                <li>
-                    <img src="img/feature_quality.svg" alt="Качество товаров">
-                    <h3 class="feature__head">Quality assurance</h3>
-                    <p class="feature__text">Worldwide delivery on all. Authorit tively morph
-                        <wbr> next-generation innov tion with extensive models.</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
