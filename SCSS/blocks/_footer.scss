@@ -1,0 +1,105 @@
+.footer {
+	background-color: $dark;
+
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 80px;
+	}
+
+	&__text {
+		font-size: 16px;
+		color: #fbfbfb;
+	}
+
+	&__icon {
+		margin-right: 5px;
+	}
+
+	&__svg-color {
+		background-color: #fff;
+		fill: $dark;
+	}
+
+	&__svg-color:hover {
+		background-color: $dark-pink;
+		fill: #fff;
+	}
+}
+
+.feedback {
+	background-image: url(../img/feedback_Background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 448px;
+
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		text-align: center;
+	}
+
+	&__comment {
+		width: 360px;
+		margin-top: 90px;
+	}
+
+	&__text {
+		margin-top: 30px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&__subtext {
+		font-style: italic;
+	}
+
+	&__subscribe {
+		width: 560px;
+		color: $dark;
+	}
+
+	&__subscribe-head {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+
+	&__subscribe-subhead {
+		font-size: 18px;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+
+	&__subscribe-wrapper {
+		display: flex;
+		justify-content: center;
+		margin-top: 32px;
+	}
+
+	&__subscribe-input {
+		padding: 18px 64px 18px 22px;
+		background-color: #e1e1e1;
+		border: 0;
+		border-top-left-radius: 18px;
+		border-bottom-left-radius: 18px;
+	}
+
+	&__subscribe-button {
+		padding: 18px 18px;
+		background-color: $dark-pink;
+		border: 0;
+		border-top-right-radius: 18px;
+		border-bottom-right-radius: 18px;
+		color: #fff;
+	}
+
+	&__subscribe-button:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	}
+
+}
