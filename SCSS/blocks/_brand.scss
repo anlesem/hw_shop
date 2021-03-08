@@ -31,9 +31,10 @@
 		font-size: 37px;
 		font-weight: 700;
 		line-height: 44px;
+
+		&-pink {
+			color: $dark-pink;
+		}
 	}
 
-	&__subtitle-pink {
-		color: $dark-pink;
-	}
 }

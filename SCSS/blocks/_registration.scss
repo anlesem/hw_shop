@@ -39,18 +39,6 @@
 		border: 1px solid #a4a4a4;
 	}
 
-	::-webkit-input-placeholder {
-		color: #b1b1b1;
-	}
-
-	::-moz-placeholder {
-		color: #b1b1b1;
-	}
-
-	/* Firefox 19+ */
-	:-ms-input-placeholder {
-		color: #b1b1b1
-	}
 
 	&__form-radio {
 		display: none;
@@ -114,6 +102,8 @@
 		line-height: 29px;
 	}
 }
+
+@include placeholder-color(#b1b1b1);
 
 .loyalty {
 	&__head {

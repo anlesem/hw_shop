@@ -15,11 +15,11 @@
 
 	&__icon-redrow {
 		fill: #e8e8e8;
-	}
 
-	&__icon-redrow:hover {
-		fill: $dark-pink;
-		cursor: pointer;
+		&:hover {
+			fill: $dark-pink;
+			cursor: pointer;
+		}
 	}
 
 	&__user {
@@ -41,59 +41,59 @@
 		height: 765px;
 		background-color: $transparent;
 		z-index: 1;
-	}
 
-	&__menu-wrapper {
-		position: absolute;
-		top: 0;
-		right: 0;
-		text-transform: uppercase;
-		width: 230px;
-		height: 100%;
-		padding: 37px 34px;
-		box-sizing: border-box;
-		background-color: #FFF;
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 17px;
-	}
+		&-wrapper {
+			position: absolute;
+			top: 0;
+			right: 0;
+			text-transform: uppercase;
+			width: 230px;
+			height: 100%;
+			padding: 37px 34px;
+			box-sizing: border-box;
+			background-color: #FFF;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 17px;
+		}
 
-	&__menu-close {
-		position: absolute;
-		top: 16px;
-		right: 16px;
-	}
+		&-close {
+			position: absolute;
+			top: 16px;
+			right: 16px;
 
-	&__menu-close:hover {
-		opacity: 0.6;
-		cursor: pointer;
-	}
+			&:hover {
+				opacity: 0.6;
+				cursor: pointer;
+			}
+		}
 
-	&__menu-list {
-		margin-top: 24px;
-	}
+		&-list {
+			margin-top: 24px;
+		}
 
-	&__menu-head {
-		margin: 20px 0 12px;
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 17px;
-		color: $dark-pink;
-	}
+		&-head {
+			margin: 20px 0 12px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+			color: $dark-pink;
+		}
 
-	&__menu-item {
-		margin: 11px 0 0 20px;
-	}
+		&-item {
+			margin: 11px 0 0 20px;
+		}
 
-	&__menu-item>a {
-		text-transform: none;
-		font-size: 14px;
-		font-weight: 400;
-		color: #6e6e6e;
-	}
+		&-item>a {
+			text-transform: none;
+			font-size: 14px;
+			font-weight: 400;
+			color: #6e6e6e;
 
-	&__menu-item>a:hover {
-		opacity: 0.6;
+			&:hover {
+				opacity: 0.6;
+			}
+		}
 	}
 
 }

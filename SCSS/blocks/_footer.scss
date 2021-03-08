@@ -20,11 +20,11 @@
 	&__svg-color {
 		background-color: #fff;
 		fill: $dark;
-	}
 
-	&__svg-color:hover {
-		background-color: $dark-pink;
-		fill: #fff;
+		&:hover {
+			background-color: $dark-pink;
+			fill: #fff;
+		}
 	}
 }
 
@@ -59,47 +59,46 @@
 	&__subscribe {
 		width: 560px;
 		color: $dark;
-	}
 
-	&__subscribe-head {
-		font-size: 24px;
-		font-weight: 700;
-		line-height: 40px;
-		text-transform: uppercase;
-	}
+		&-head {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 40px;
+			text-transform: uppercase;
+		}
 
-	&__subscribe-subhead {
-		font-size: 18px;
-		line-height: 30px;
-		text-transform: uppercase;
-	}
+		&-subhead {
+			font-size: 18px;
+			line-height: 30px;
+			text-transform: uppercase;
+		}
 
-	&__subscribe-wrapper {
-		display: flex;
-		justify-content: center;
-		margin-top: 32px;
-	}
+		&-wrapper {
+			display: flex;
+			justify-content: center;
+			margin-top: 32px;
+		}
 
-	&__subscribe-input {
-		padding: 18px 64px 18px 22px;
-		background-color: #e1e1e1;
-		border: 0;
-		border-top-left-radius: 18px;
-		border-bottom-left-radius: 18px;
-	}
+		&-input {
+			padding: 18px 64px 18px 22px;
+			background-color: #e1e1e1;
+			border: 0;
+			border-top-left-radius: 18px;
+			border-bottom-left-radius: 18px;
+		}
 
-	&__subscribe-button {
-		padding: 18px 18px;
-		background-color: $dark-pink;
-		border: 0;
-		border-top-right-radius: 18px;
-		border-bottom-right-radius: 18px;
-		color: #fff;
-	}
+		&-button {
+			padding: 18px 18px;
+			background-color: $dark-pink;
+			border: 0;
+			border-top-right-radius: 18px;
+			border-bottom-right-radius: 18px;
+			color: #fff;
 
-	&__subscribe-button:hover {
-		opacity: 0.6;
-		cursor: pointer;
+			&:hover {
+				opacity: 0.6;
+				cursor: pointer;
+			}
+		}
 	}
-
 }

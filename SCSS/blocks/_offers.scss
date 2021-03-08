@@ -18,38 +18,38 @@
 		text-transform: uppercase;
 		text-align: center;
 		background-color: $transparent;
-	}
 
-	&__item::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		z-index: -1;
-	}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
+		}
 
-	&__item--woman::after {
-		background-image: url(../img/offerImage01.png);
-	}
+		&-woman::after {
+			background-image: url(../img/offerImage01.png);
+		}
 
-	&__item--man::after {
-		background-image: url(../img/offerImage02.png);
-	}
+		&-man::after {
+			background-image: url(../img/offerImage02.png);
+		}
 
-	&__item--kids::after {
-		background-image: url(../img/offerImage03.png);
-	}
+		&-kids::after {
+			background-image: url(../img/offerImage03.png);
+		}
 
-	&__item--accesories {
-		width: 100%;
-		min-height: 180px;
-		margin: 0;
-	}
+		&-accesories {
+			width: 100%;
+			min-height: 180px;
+			margin: 0;
 
-	&__item--accesories::after {
-		background-image: url(../img/offerImage04.png);
+			&::after {
+				background-image: url(../img/offerImage04.png);
+			}
+		}
 	}
 
 	&__head {
