@@ -92,16 +92,10 @@
 		margin-top: 20px;
 		padding: 14px 38px;
 		background-color: transparent;
-
-		&-text {
-			color: #ff6a6a;
-		}
+		color: #ff6a6a;
 
 		&:hover {
 			background-color: #ff6a6a;
-		}
-
-		&:hover &-text {
 			color: #fff;
 		}
 	}
