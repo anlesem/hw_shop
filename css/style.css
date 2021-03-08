@@ -593,7 +593,7 @@ body {
 .product__info-price {
   font-size: 16px;
   line-height: 19px;
-  color: var(--dark-pink);
+  color: #F16D7F;
 }
 
 .product__button {
