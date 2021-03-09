@@ -18,12 +18,12 @@
 	}
 
 	&__svg-color {
-		background-color: #fff;
+		background-color: $icon-color-footer;
 		fill: $dark;
 
 		&:hover {
-			background-color: $dark-pink;
-			fill: #fff;
+			background-color: $icon-color-hover;
+			fill: $icon-color-footer;
 		}
 	}
 }

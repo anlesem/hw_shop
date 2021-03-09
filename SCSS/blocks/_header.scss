@@ -14,10 +14,10 @@
 	}
 
 	&__icon-redrow {
-		fill: #e8e8e8;
+		fill: $icon-color;
 
 		&:hover {
-			fill: $dark-pink;
+			fill: $icon-color-hover;
 			cursor: pointer;
 		}
 	}
