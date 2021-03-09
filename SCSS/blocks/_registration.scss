@@ -1,0 +1,128 @@
+.registration {
+	background-color: #F8F3F4;
+
+	&__head {
+		padding: 60px 0;
+		font-size: 24px;
+		line-height: 29px;
+		text-transform: uppercase;
+		color: $dark-pink;
+	}
+
+	&__wrapper {
+		margin: 64px 0 96px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__form-field {
+		width: 360px;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 19px;
+		color: $dark;
+	}
+
+	&__form-up {
+		margin-bottom: 31px;
+	}
+
+	&__form-down {
+		margin: 35px 0 39px;
+	}
+
+	&__form-input {
+		width: 100%;
+		margin-top: 20px;
+		padding: 15px 17px;
+		box-sizing: border-box;
+		border: 1px solid #a4a4a4;
+	}
+
+
+	&__form-radio {
+		display: none;
+	}
+
+	&__form-label {
+		position: relative;
+		margin: 50px 20px 0 25px;
+		font-size: 11px;
+		font-weight: 300;
+		line-height: 13px;
+		color: #000;
+	}
+
+	&__form-label::before {
+		content: "";
+		position: absolute;
+		top: -2px;
+		left: -25px;
+		width: 17px;
+		height: 17px;
+		border: 1px solid #a4a4a4;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	&__form-radio:checked+&__form-label::before {
+		background-color: $dark-pink;
+		background-image: url(../img/loyalty_ok.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 10px 10px;
+	}
+
+	&__form-text {
+		margin-top: 15px;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 16px;
+		color: #b1b1b1;
+	}
+
+	&__form-button {
+		text-transform: uppercase;
+		padding: 17px 29px;
+		border: 0;
+		color: #fff;
+		background-color: $dark-pink;
+	}
+
+	&__form-button:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	}
+
+	&__loyalty {
+		width: 650px;
+		color: #000;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 29px;
+	}
+}
+
+@include placeholder-color(#b1b1b1);
+
+.loyalty {
+	&__head {
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 29px;
+	}
+
+	&__text {
+		margin-top: 22px;
+	}
+
+	&__list {
+		margin-top: 16px;
+		padding-left: 42px;
+		background-image: url(../img/loyalty_ok.svg);
+		background-repeat: no-repeat;
+		background-position: left center;
+
+	}
+}

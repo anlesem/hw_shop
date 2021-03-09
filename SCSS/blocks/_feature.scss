@@ -1,0 +1,27 @@
+.feature {
+	margin-top: 95px;
+	background-color: #222;
+
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 340px;
+		text-align: center;
+	}
+
+	&__head {
+		padding: 28px 0 16px;
+		font-size: 20px;
+		line-height: 24px;
+		color: white;
+	}
+
+	&__text {
+		width: 360px;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 17px;
+		color: #fbfbfb;
+	}
+}

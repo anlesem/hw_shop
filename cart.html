@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Регистрация</title>
+	<title>Корзина</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -44,12 +44,12 @@
 						<use href="#icon__menu" />
 					</svg>
 				</button>
-				<a href="#">
+				<a href="reg.html">
 					<svg class="header__icon-redrow header__user" width="29" height="29">
 						<use href="#icon__user" />
 					</svg>
 				</a>
-				<a href="cart.html">
+				<a href="#">
 					<svg class="header__icon-redrow" width="32" height="29">
 						<use href="#icon__cart" />
 					</svg>
@@ -97,48 +97,61 @@
 		</div>
 	</header>
 	<main>
-		<section class="registration">
+		<section class="cart">
 			<div class="container">
-				<h1 class="registration__head">registration</h1>
+				<h1 class="cart__head">shopping cart</h1>
 			</div>
 		</section>
 		<section>
 			<div class="container">
 				<!--            H2 скрытый. Для SEO         -->
-				<h2 class="visually-hidden">subregistration</h2>
-				<div class="registration__wrapper">
-					<form action="">
-						<fieldset class="registration__form-field registration__form-up">
-							<legend>Your Name</legend>
-							<input class="registration__form-input" type="text" placeholder="First Name">
-							<input class="registration__form-input" type="text" placeholder="Last Name">
-						</fieldset>
-						<input type="radio" name="sex" class="registration__form-radio" id="sex__male">
-						<label class="registration__form-label" for="sex__male">Male</label>
-						<input type="radio" name="sex" class="registration__form-radio" id="sex__female">
-						<label class="registration__form-label" for="sex__female">Female</label>
-						<fieldset class="registration__form-field registration__form-down">
-							<legend>Login details</legend>
-							<input class="registration__form-input" type="email" placeholder="Email">
-							<input class="registration__form-input" type="password" placeholder="Password">
-							<p class="registration__form-text">Please use 8 or more characters, with at least 1 number
-								and a mixture of uppercase and lowercase letters</p>
-						</fieldset>
-						<button type="submit" class="registration__form-button">join now &nbsp; →</button>
-					</form>
-					<div class="registration__loyalty">
-						<h2 class="loyalty__head">loyalty has its perks</h2>
-						<p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious
-							perks. Starting
-							with these as soon as you join:</p>
+				<h2 class="visually-hidden">subcart</h2>
+				<div class="cart__wrapper">
+					<div>
 						<ul>
-							<li class="loyalty__list">15% off welcome offer</li>
-							<li class="loyalty__list">Free shipping, returns and exchanges on all orders</li>
-							<li class="loyalty__list">$10 off a purchase on your birthday</li>
-							<li class="loyalty__list">Early access to products</li>
-							<li class="loyalty__list">Exclusive offers & rewards</li>
+							<li class="cart__item">
+								<img src="img/cart-photo-01.png" alt="изображение товара" width="262" height="306">
+								<div class="cart__item-manage">
+									<img class="cart__item-delete" src="img/cart_delete.svg" alt="удалить товар">
+									<h2 class="cart__item-head">mango people t-shirt</h2>
+									<p class="cart__item-text">Price: <span class="cart__item-price">$300</span></p>
+									<p class="cart__item-text">Color: Red</p>
+									<p class="cart__item-text">Size: Xl</p>
+									<p class="cart__item-text">Quantity: <input class="cart__item-input" type="number"></p>
+								</div>
+							</li>
+							<li class="cart__item">
+								<img src="img/cart-photo-02.png" alt="изображение товара" width="262" height="306">
+								<div class="cart__item-manage">
+									<img class="cart__item-delete" src="img/cart_delete.svg" alt="удалить товар">
+									<h2 class="cart__item-head">mango people t-shirt</h2>
+									<p class="cart__item-text">Price: <span class="cart__item-price">$300</span></p>
+									<p class="cart__item-text">Color: Red</p>
+									<p class="cart__item-text">Size: Xl</p>
+									<p class="cart__item-text">Quantity: <input class="cart__item-input" type="number"></p>
+								</div>
+							</li>
 						</ul>
+						<div class="cart__list-operation">
+							<button class="cart__list-button" type="reset">clear shopping cart</button>
+							<button class="cart__list-button" type="button"><a href="#">continue shopping</a></button>
+						</div>
 					</div>
+					<form class="cart__form" action="">
+						<fieldset>
+							<legend class="cart__form-head">shipping adress</legend>
+							<input class="cart__form-input" type="text" placeholder="City">
+							<input class="cart__form-input" type="text" placeholder="State">
+							<input class="cart__form-input" type="text" placeholder="Postcode / Zip">
+							<button class="cart__form-button" type="button">get a quote</button>
+						</fieldset>
+						<fieldset class="cart__total">
+							<p class="cart__total-text">sub total <span class="cart__total-text-price">$900</span></p>
+							<p class="cart__total-grand">grand total <span class="cart__total-grand-price">$900</span></p>
+							<hr class="cart__total-separate">
+							<button type="submit" class="cart__total-button">proceed to checkout</button>
+						</fieldset>
+					</form>
 				</div>
 			</div>
 		</section>

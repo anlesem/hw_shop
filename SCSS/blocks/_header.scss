@@ -1,0 +1,103 @@
+.header {
+	background-color: $dark;
+	position: relative;
+
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 75px;
+	}
+
+	&__logo {
+		margin-right: 41px;
+	}
+
+	&__icon-redrow {
+		fill: $icon-color;
+
+		&:hover {
+			fill: $icon-color-hover;
+			cursor: pointer;
+		}
+	}
+
+	&__user {
+		margin: 0 42px 0 25px;
+	}
+
+	&__button {
+		border: 0;
+		padding: 0;
+		background-color: transparent;
+	}
+
+	&__menu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		height: 765px;
+		background-color: $transparent;
+		z-index: 1;
+
+		&-wrapper {
+			position: absolute;
+			top: 0;
+			right: 0;
+			text-transform: uppercase;
+			width: 230px;
+			height: 100%;
+			padding: 37px 34px;
+			box-sizing: border-box;
+			background-color: #FFF;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 17px;
+		}
+
+		&-close {
+			position: absolute;
+			top: 16px;
+			right: 16px;
+
+			&:hover {
+				opacity: 0.6;
+				cursor: pointer;
+			}
+		}
+
+		&-list {
+			margin-top: 24px;
+		}
+
+		&-head {
+			margin: 20px 0 12px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+			color: $dark-pink;
+		}
+
+		&-item {
+			margin: 11px 0 0 20px;
+		}
+
+		&-item>a {
+			text-transform: none;
+			font-size: 14px;
+			font-weight: 400;
+			color: #6e6e6e;
+
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+
+}
+
+.display-block {
+	display: block;
+}
