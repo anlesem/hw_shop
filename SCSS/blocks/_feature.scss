@@ -8,6 +8,17 @@
 		align-items: center;
 		min-height: 340px;
 		text-align: center;
+
+		@include tablet {
+			flex-direction: column;
+			padding-bottom: 64px;
+		}
+
+		&>li {
+			@include tablet {
+				padding-top: 50px;
+			}
+		}
 	}
 
 	&__head {
@@ -18,7 +29,9 @@
 	}
 
 	&__text {
-		width: 360px;
+		max-width: 360px;
+		padding: 0 10px;
+		box-sizing: border-box;
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 17px;

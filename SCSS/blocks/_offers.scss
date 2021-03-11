@@ -1,23 +1,38 @@
 .offers {
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-top: 65px;
+
+		@include tablet {
+			margin-top: 20px;
+		}
 	}
 
 	&__item {
 		position: relative;
 		color: #fff;
-		width: 360px;
+		width: 31%;
 		min-height: 260px;
-		margin: 0 0 30px;
+		margin-bottom: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-transform: uppercase;
 		text-align: center;
 		background-color: $transparent;
+
+		@include tablet {
+			min-height: 167px;
+			margin-bottom: 20px;
+		}
+
+		@include mobile {
+			width: 100%;
+			min-height: 247px;
+		}
 
 		&::after {
 			content: '';
@@ -31,14 +46,20 @@
 
 		&-woman::after {
 			background-image: url(../img/offerImage01.png);
+			background-position: center center;
+			background-size: cover;
 		}
 
 		&-man::after {
 			background-image: url(../img/offerImage02.png);
+			background-position: center center;
+			background-size: cover;
 		}
 
 		&-kids::after {
 			background-image: url(../img/offerImage03.png);
+			background-position: center center;
+			background-size: cover;
 		}
 
 		&-accesories {
@@ -46,14 +67,22 @@
 			min-height: 180px;
 			margin: 0;
 
+			@include tablet {
+				flex-direction: column;
+				min-height: 116px;
+			}
+
 			&::after {
 				background-image: url(../img/offerImage04.png);
+				background-position: center center;
+				background-size: cover;
 			}
 		}
 	}
 
 	&__head {
 		font-size: 16px;
+		font-weight: 400;
 		line-height: 19px;
 	}
 

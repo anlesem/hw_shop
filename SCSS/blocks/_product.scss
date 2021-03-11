@@ -1,12 +1,15 @@
 .product {
 	text-align: center;
 
-
 	&__head {
 		margin-top: 96px;
 		font-size: 30px;
 		line-height: 36px;
 		color: $dark;
+
+		@include tablet {
+			margin-top: 64px;
+		}
 	}
 
 	&__subhead {
@@ -20,21 +23,41 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-top: 48px;
+
+		@include tablet {
+			justify-content: space-around;
+		}
 	}
 
 	&__items {
-		position: relative;
-		width: 360px;
+		max-width: 360px;
 		background-color: #f8f8f8;
 		margin-bottom: 30px;
 		text-align: left;
+
+		@include tablet {
+			margin-bottom: 15px;
+		}
+
+		&>div {
+			position: relative;
+		}
+
+		&>div>img {
+			display: block;
+
+			@include mobile {
+				width: 100%;
+				height: auto;
+			}
+		}
 
 		&-overlaeyer {
 			position: absolute;
 			top: 0;
 			left: 0;
 			right: 0;
-			height: 420px;
+			bottom: 0;
 			background-color: $transparent;
 			opacity: 0;
 

@@ -1,55 +1,48 @@
-.footer {
-	background-color: $dark;
-
-	& .container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		min-height: 80px;
-	}
-
-	&__text {
-		font-size: 16px;
-		color: #fbfbfb;
-	}
-
-	&__icon {
-		margin-right: 5px;
-	}
-
-	&__svg-color {
-		background-color: $icon-color-footer;
-		fill: $dark;
-
-		&:hover {
-			background-color: $icon-color-hover;
-			fill: $icon-color-footer;
-		}
-	}
-}
-
 .feedback {
 	background-image: url(../img/feedback_Background.jpg);
 	background-repeat: no-repeat;
+	background-position: left -3px bottom;
 	background-size: cover;
 	min-height: 448px;
+
+	@include tablet {
+		padding-bottom: 140px;
+	}
 
 	& .container {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
 		text-align: center;
+
+		@include tablet {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__comment {
 		width: 360px;
 		margin-top: 90px;
+
+		@include tablet {
+			margin-top: 54px;
+		}
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 
 	&__text {
 		margin-top: 30px;
 		font-size: 20px;
 		line-height: 24px;
+
+		@include mobile {
+			font-size: 18px;
+			line-height: 22px;
+		}
 	}
 
 	&__subtext {
@@ -57,8 +50,16 @@
 	}
 
 	&__subscribe {
-		width: 560px;
+		max-width: 560px;
 		color: $dark;
+
+		@include tablet {
+			margin-top: 54px;
+		}
+
+		@include mobile {
+			width: 100%;
+		}
 
 		&-head {
 			font-size: 24px;
@@ -71,12 +72,21 @@
 			font-size: 18px;
 			line-height: 30px;
 			text-transform: uppercase;
+
+			@include mobile {
+				font-size: 14px;
+				line-height: 21px;
+			}
 		}
 
 		&-wrapper {
 			display: flex;
 			justify-content: center;
 			margin-top: 32px;
+
+			@include tablet {
+				margin-top: 27px;
+			}
 		}
 
 		&-input {
@@ -85,6 +95,11 @@
 			border: 0;
 			border-top-left-radius: 18px;
 			border-bottom-left-radius: 18px;
+
+			@include mobile {
+				width: 70%;
+				padding: 18px 0 18px 22px;
+			}
 		}
 
 		&-button {
@@ -95,10 +110,65 @@
 			border-bottom-right-radius: 18px;
 			color: #fff;
 
+			@include mobile {
+				width: 30%;
+				overflow: hidden;
+			}
+
 			&:hover {
 				opacity: 0.6;
 				cursor: pointer;
 			}
+		}
+	}
+}
+
+
+.footer {
+	background-color: $dark;
+
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 80px;
+
+		@include tablet {
+			padding: 0 32px;
+		}
+
+		@include mobile {
+			flex-direction: column-reverse;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		color: #fbfbfb;
+
+		@include mobile {
+			text-align: center;
+		}
+	}
+
+	&__icon {
+		margin-right: 5px;
+
+	}
+
+	&__svg-color {
+		background-color: $icon-color-footer;
+		fill: $dark;
+
+		@include mobile {
+			margin-top: 42px;
+			margin-bottom: 42px;
+		}
+
+		&:hover {
+			background-color: $icon-color-hover;
+			fill: $icon-color-footer;
 		}
 	}
 }
