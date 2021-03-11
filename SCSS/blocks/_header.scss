@@ -7,6 +7,14 @@
 		justify-content: space-between;
 		align-items: center;
 		min-height: 75px;
+
+		@include tablet {
+			padding: 0 32px;
+		}
+
+		@include mobile {
+			padding: 0 16px;
+		}
 	}
 
 	&__logo {
@@ -22,8 +30,18 @@
 		}
 	}
 
-	&__user {
+	&__reg {
 		margin: 0 42px 0 25px;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&__cart {
+		@include mobile {
+			display: none;
+		}
 	}
 
 	&__button {

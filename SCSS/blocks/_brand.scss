@@ -6,14 +6,42 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include tablet {
+			height: 368px;
+		}
+
+		@include mobile {
+			justify-content: center;
+		}
 	}
 
 	&__photo {
 		flex-grow: 1;
+
+		@include tablet {
+			text-align: center;
+		}
+
+		@include mobile {
+			display: none;
+		}
+
+		&>img {
+			@include tablet {
+				width: 45%;
+				height: auto;
+			}
+		}
+
 	}
 
 	&__name {
 		flex-grow: 1;
+
+		@include tablet {
+			flex-grow: unset;
+		}
 	}
 
 	&__title {
@@ -23,6 +51,16 @@
 		font-weight: 900;
 		line-height: 58px;
 		text-transform: uppercase;
+
+		@include tablet {
+			font-size: 44px;
+			line-height: 52px;
+		}
+
+		@include mobile {
+			font-size: 37px;
+			line-height: 44px;
+		}
 	}
 
 	&__subtitle {
@@ -31,6 +69,16 @@
 		font-size: 37px;
 		font-weight: 700;
 		line-height: 44px;
+
+		@include tablet {
+			font-size: 24px;
+			line-height: 29px;
+		}
+
+		@include mobile {
+			font-size: 20px;
+			line-height: 24px;
+		}
 
 		&-pink {
 			color: $dark-pink;
