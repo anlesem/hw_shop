@@ -1,6 +1,7 @@
-@import "_mixin";
-@import "_variable";
 @import "_reset";
+@import "_variable";
+@import "_mixin";
+@import "_font";
 @import "_general";
 @import "blocks/_header";
 @import "blocks/_footer";
@@ -10,3 +11,5 @@
 @import "blocks/_feature";
 @import "blocks/_registration";
 @import "blocks/_cart";
+@import "blocks/_arrivals";
+@import "blocks/_slider";
