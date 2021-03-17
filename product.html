@@ -40,12 +40,15 @@
 				<a href="index.html">
 					<img class="header__logo" src="img/header_logo.png" alt="Логотип" width="44" height="38">
 				</a>
-				<svg class="header__icon-redrow" width="27" height="28">
-					<use href="#icon__loupe" />
-				</svg>
+				<div class="header__icon-find">
+					<svg width="27" height="28">
+						<use href="#icon__loupe" />
+					</svg>
+					<input type="text">
+				</div>
 			</div>
 			<div>
-				<button class="header__button" id="burger" type="menu">
+				<button class="header__button" id="burger" type="button">
 					<svg class="header__icon-redrow" width="32" height="23">
 						<use href="#icon__menu" />
 					</svg>
@@ -195,15 +198,16 @@
 						</select>
 					</li>
 				</ul>
-				<button class="collection__button" type="button">
+				<div class="collection__button">
 					<svg class="collection__button-image" width="27" height="25" viewBox="0 0 27 25">
 						<use href="#icon__cart" />
 					</svg>
 					<p class="collection__button-text">Add to Cart</p>
-				</button>
+				</div>
 			</div>
 		</section>
 		<section class="product container arrivals__margin">
+			<h2 class="visually-hidden">product</h2>
 			<ul class="product__wrapper">
 				<li class="product__items">
 					<div>
@@ -268,11 +272,12 @@
 			<h2 class="visually-hidden">feedback</h2>
 			<div class="container">
 				<article class="feedback__comment">
+					<h3 class="visually-hidden">product</h3>
 					<img src="img/feedback_Photo.png" alt="Фотография покупателя">
 					<p class="feedback__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
 							class="feedback__subtext">a pulvinar purus condimentum“</span></p>
 				</article>
-				<form class="feedback__subscribe" action="">
+				<form class="feedback__subscribe" action="#">
 					<h2 class="feedback__subscribe-head">subscribe</h2>
 					<h3 class="feedback__subscribe-subhead">for our newletter and promotion</h3>
 					<div class="feedback__subscribe-wrapper">
@@ -285,7 +290,7 @@
 		<section class="footer">
 			<h2 class="visually-hidden">copyright</h2>
 			<div class="container">
-				<p class="footer__text">&copy 2021 Brand All Rights Reserved.</p>
+				<p class="footer__text">&copy; 2021 Brand All Rights Reserved.</p>
 				<div>
 					<a class="footer__icon" href="#">
 						<svg class="footer__svg-color" width="32" height="32" viewBox="0 0 32 32"

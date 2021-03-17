@@ -164,6 +164,7 @@
 			line-height: 17px;
 			text-transform: uppercase;
 			color: #A4A4A4;
+			transition: background-color 500ms, border 500ms, color 500ms;
 
 			@include mobile {
 				padding: 8px 25px;
@@ -256,6 +257,7 @@
 			line-height: 13px;
 			text-align: center;
 			color: #A4A4A4;
+			transition: background-color 500ms, border 500ms, color 500ms;
 
 			&:hover {
 				border: 1px solid #ff6a6a;
@@ -325,6 +327,7 @@
 			line-height: 19px;
 			text-align: center;
 			color: #fff;
+			transition: opacity 500ms;
 
 			&:hover {
 				opacity: 0.6;
