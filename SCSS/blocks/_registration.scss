@@ -114,6 +114,7 @@
 		border: 0;
 		color: #fff;
 		background-color: $dark-pink;
+		transition: opacity 500ms;
 	}
 
 	&__form-button:hover {

@@ -1,7 +1,7 @@
 .arrivals {
 	background-color: #F8F3F4;
 
-	& .container {
+	.container {
 		padding: 60px 0;
 		display: flex;
 		justify-content: space-between;
@@ -175,6 +175,7 @@
 	}
 
 	&__button {
+		display: inline-block;
 		margin-top: 50px;
 		padding: 14px 60px;
 		position: relative;
@@ -184,6 +185,7 @@
 		background-color: transparent;
 		border: 1px solid #F26376;
 		color: #F26376;
+		transition: fill 500ms, background-color 500ms, color 500ms;
 
 		&:hover {
 			background-color: #F26376;
@@ -200,6 +202,7 @@
 			top: 11px;
 			left: 22px;
 			fill: #F26376;
+			transition: fill 500ms;
 		}
 	}
 }

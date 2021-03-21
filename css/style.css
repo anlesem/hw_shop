@@ -210,17 +210,91 @@ body {
   }
 }
 
+.header .container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__logo {
   margin-right: 41px;
+  -webkit-transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, transform 500ms;
+  transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+}
+
+.header__logo:hover, .header__logo:focus {
+  opacity: 0.7;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.header__logo:active {
+  opacity: 0.5;
 }
 
 .header__icon-redrow {
   fill: #e8e8e8;
+  -webkit-transition: fill 500ms;
+  transition: fill 500ms;
 }
 
-.header__icon-redrow:hover {
+.header__icon-redrow:hover, .header__icon-redrow:focus {
   fill: #F16D7F;
   cursor: pointer;
+}
+
+.header__icon-redrow:active {
+  opacity: 0.7;
+}
+
+.header__icon-find {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #e8e8e8;
+  border: 0 solid transparent;
+  padding: 0;
+  -webkit-transition: border 500ms, padding 500ms, fill 500ms;
+  transition: border 500ms, padding 500ms, fill 500ms;
+}
+
+.header__icon-find > svg {
+  margin-right: 15px;
+}
+
+.header__icon-find > input {
+  width: 0;
+  padding: 3px 5px;
+  background-color: transparent;
+  border: 0;
+  -webkit-transition: width 500ms, background-color 500ms;
+  transition: width 500ms, background-color 500ms;
+}
+
+.header__icon-find:hover, .header__icon-find:focus {
+  border: 1px solid #F16D7F;
+  padding: 5px 15px;
+  fill: #F16D7F;
+  cursor: pointer;
+}
+
+.header__icon-find:hover input, .header__icon-find:focus input {
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header__reg {
@@ -231,6 +305,35 @@ body {
   .header__reg {
     display: none;
   }
+}
+
+.header__cart {
+  position: relative;
+}
+
+.header__cart::after {
+  content: "2";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  text-align: center;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 12px;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.header__cart:hover::after, .header__cart:focus::after {
+  opacity: 0.7;
+}
+
+.header__cart:active::after {
+  opacity: 0.5;
 }
 
 @media (max-width: 375px) {
@@ -276,11 +379,17 @@ body {
   position: absolute;
   top: 16px;
   right: 16px;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-.header__menu-close:hover {
-  opacity: 0.6;
+.header__menu-close:hover, .header__menu-close:focus {
+  opacity: 0.7;
   cursor: pointer;
+}
+
+.header__menu-close:active {
+  opacity: 0.5;
 }
 
 .header__menu-list {
@@ -304,10 +413,16 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #6e6e6e;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-.header__menu-item > a:hover {
-  opacity: 0.6;
+.header__menu-item > a:hover, .header__menu-item > a:focus {
+  opacity: 0.7;
+}
+
+.header__menu-item > a:active {
+  opacity: 0.5;
 }
 
 .display-block {
@@ -462,6 +577,8 @@ body {
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
   color: #fff;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 @media (max-width: 375px) {
@@ -471,9 +588,13 @@ body {
   }
 }
 
-.feedback__subscribe-button:hover {
-  opacity: 0.6;
+.feedback__subscribe-button:hover, .feedback__subscribe-button:focus {
+  opacity: 0.7;
   cursor: pointer;
+}
+
+.feedback__subscribe-button:active {
+  opacity: 0.5;
 }
 
 .footer {
@@ -527,6 +648,8 @@ body {
 .footer__svg-color {
   background-color: #fff;
   fill: #222222;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 @media (max-width: 375px) {
@@ -536,9 +659,13 @@ body {
   }
 }
 
-.footer__svg-color:hover {
+.footer__svg-color:hover, .footer__svg-color:focus {
   background-color: #F16D7F;
   fill: #fff;
+}
+
+.footer__svg-color:active {
+  opacity: 0.8;
 }
 
 .brand {
@@ -716,6 +843,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: rgba(33, 22, 22, 0.7);
+  -webkit-transition: background-color 500ms, opacity 500ms;
+  transition: background-color 500ms, opacity 500ms;
 }
 
 @media (max-width: 768px) {
@@ -732,13 +861,18 @@ body {
   }
 }
 
-.offers__item:hover {
+.offers__item:hover, .offers__item:focus {
   background-color: rgba(33, 22, 22, 0.5);
 }
 
 .offers__item:hover .offers__head,
-.offers__item:hover .offers__text {
+.offers__item:hover .offers__text, .offers__item:focus .offers__head,
+.offers__item:focus .offers__text {
   opacity: 0.7;
+}
+
+.offers__item:active {
+  opacity: 0.5;
 }
 
 .offers__item::after {
@@ -884,9 +1018,13 @@ body {
   opacity: 0;
 }
 
-.product__items-overlaeyer:hover {
+.product__items-overlaeyer:hover, .product__items-overlaeyer:focus {
   opacity: 1;
   cursor: pointer;
+}
+
+.product__items-overlaeyer:active {
+  opacity: 0.8;
 }
 
 .product__items-button {
@@ -910,6 +1048,21 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #fff;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.product__items-button:hover, .product__items-button:focus {
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0.7;
+}
+
+.product__items-button:active {
+  opacity: 0.5;
 }
 
 .product__info {
@@ -937,6 +1090,7 @@ body {
 }
 
 .product__button {
+  display: inline-block;
   font-size: 16px;
   line-height: 19px;
   border: 1px solid #ff6a6a;
@@ -944,11 +1098,18 @@ body {
   padding: 14px 38px;
   background-color: transparent;
   color: #ff6a6a;
+  -webkit-transition: background-color 500ms, color 500ms;
+  transition: background-color 500ms, color 500ms;
 }
 
-.product__button:hover {
+.product__button:hover, .product__button:focus {
   background-color: #ff6a6a;
   color: #fff;
+  cursor: pointer;
+}
+
+.product__button:active {
+  opacity: 0.8;
 }
 
 .feature {
@@ -1138,6 +1299,8 @@ body {
   border: 0;
   color: #fff;
   background-color: #F16D7F;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .registration__form-button:hover {
@@ -1450,6 +1613,8 @@ body {
   line-height: 17px;
   text-transform: uppercase;
   color: #A4A4A4;
+  -webkit-transition: background-color 500ms, border 500ms, color 500ms;
+  transition: background-color 500ms, border 500ms, color 500ms;
 }
 
 @media (max-width: 375px) {
@@ -1560,6 +1725,8 @@ body {
   line-height: 13px;
   text-align: center;
   color: #A4A4A4;
+  -webkit-transition: background-color 500ms, border 500ms, color 500ms;
+  transition: background-color 500ms, border 500ms, color 500ms;
 }
 
 .cart__form-button:hover {
@@ -1631,6 +1798,8 @@ body {
   line-height: 19px;
   text-align: center;
   color: #fff;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .cart__total-button:hover {
@@ -1849,6 +2018,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .collection__button {
+  display: inline-block;
   margin-top: 50px;
   padding: 14px 60px;
   position: relative;
@@ -1858,6 +2028,8 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: transparent;
   border: 1px solid #F26376;
   color: #F26376;
+  -webkit-transition: fill 500ms, background-color 500ms, color 500ms;
+  transition: fill 500ms, background-color 500ms, color 500ms;
 }
 
 .collection__button:hover {
@@ -1875,6 +2047,8 @@ input[type=number]::-webkit-outer-spin-button {
   top: 11px;
   left: 22px;
   fill: #F26376;
+  -webkit-transition: fill 500ms;
+  transition: fill 500ms;
 }
 
 .slider {
@@ -1966,6 +2140,8 @@ input[type=number]::-webkit-outer-spin-button {
   height: 47px;
   fill: #000;
   z-index: 5;
+  -webkit-transition: fill 500ms;
+  transition: fill 500ms;
 }
 
 .slider__arrow-prev:hover, .slider__arrow-prev:hover, .slider__arrow-next:hover, .slider__arrow-next:hover {

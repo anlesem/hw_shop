@@ -82,6 +82,7 @@ $height-of-slider-small: 624px;
 			height: 47px;
 			fill: #000;
 			z-index: 5;
+			transition: fill 500ms;
 
 			&:hover,
 			&:hover {

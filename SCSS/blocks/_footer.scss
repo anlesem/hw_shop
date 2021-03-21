@@ -109,15 +109,21 @@
 			border-top-right-radius: 18px;
 			border-bottom-right-radius: 18px;
 			color: #fff;
+			transition: opacity 500ms;
 
 			@include mobile {
 				width: 30%;
 				overflow: hidden;
 			}
 
-			&:hover {
-				opacity: 0.6;
+			&:hover,
+			&:focus {
+				opacity: 0.7;
 				cursor: pointer;
+			}
+
+			&:active {
+				opacity: 0.5;
 			}
 		}
 	}
@@ -160,15 +166,21 @@
 	&__svg-color {
 		background-color: $icon-color-footer;
 		fill: $dark;
+		transition: all 500ms;
 
 		@include mobile {
 			margin-top: 42px;
 			margin-bottom: 42px;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: $icon-color-hover;
 			fill: $icon-color-footer;
+		}
+
+		&:active {
+			opacity: 0.8;
 		}
 	}
 }
