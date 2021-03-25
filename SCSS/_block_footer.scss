@@ -1,5 +1,5 @@
 .feedback {
-	background-image: url(../img/feedback_Background.jpg);
+	background-image: url(../img/feedback_background.jpg);
 	background-repeat: no-repeat;
 	background-position: left -3px bottom;
 	background-size: cover;
@@ -104,7 +104,7 @@
 
 		&-button {
 			padding: 18px 18px;
-			background-color: $dark-pink;
+			background-color: $pink;
 			border: 0;
 			border-top-right-radius: 18px;
 			border-bottom-right-radius: 18px;

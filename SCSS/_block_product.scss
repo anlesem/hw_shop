@@ -121,7 +121,7 @@
 		&-price {
 			font-size: 16px;
 			line-height: 19px;
-			color: $dark-pink;
+			color: $pink;
 		}
 	}
 
@@ -129,16 +129,16 @@
 		display: inline-block;
 		font-size: 16px;
 		line-height: 19px;
-		border: 1px solid #ff6a6a;
+		border: 1px solid $pink;
 		margin-top: 20px;
 		padding: 14px 38px;
 		background-color: transparent;
-		color: #ff6a6a;
+		color: $pink;
 		transition: background-color 500ms, color 500ms;
 
 		&:hover,
 		&:focus {
-			background-color: #ff6a6a;
+			background-color: $pink;
 			color: #fff;
 			cursor: pointer;
 		}

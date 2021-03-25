@@ -1,5 +1,5 @@
 .brand {
-	background-color: $pink;
+	background-color: $light-pink;
 	position: relative;
 
 	& .container {
@@ -45,7 +45,7 @@
 	}
 
 	&__title {
-		border-left: 12px solid $dark-pink;
+		border-left: 12px solid $pink;
 		padding-left: 16px;
 		font-size: 48px;
 		font-weight: 900;
@@ -81,7 +81,7 @@
 		}
 
 		&-pink {
-			color: $dark-pink;
+			color: $pink;
 		}
 	}
 
