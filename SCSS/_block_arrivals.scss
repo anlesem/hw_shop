@@ -6,6 +6,10 @@
 		display: flex;
 		justify-content: space-between;
 
+		@include tablet {
+			padding: 60px 16px;
+		}
+
 		@include mobile {
 			flex-direction: column;
 			text-align: center;
@@ -17,7 +21,7 @@
 		font-size: 24px;
 		line-height: 29px;
 		text-transform: uppercase;
-		color: $dark-pink;
+		color: $pink;
 	}
 
 	&__path {
@@ -33,7 +37,7 @@
 
 		& span {
 			font-weight: 700;
-			color: $dark-pink;
+			color: $pink;
 		}
 	}
 
@@ -76,7 +80,7 @@
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 17px;
-		color: $dark-pink;
+		color: $pink;
 
 		&::after {
 			content: "";
@@ -85,7 +89,7 @@
 			bottom: 0;
 			width: 63px;
 			height: 3px;
-			background-color: $dark-pink;
+			background-color: $pink;
 			transform: translateX(-50%);
 		}
 	}
@@ -118,7 +122,7 @@
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 29px;
-		color: #EF5B70;
+		color: $dark-pink;
 	}
 
 	&__separate {
@@ -183,12 +187,12 @@
 		font-size: 16px;
 		line-height: 19px;
 		background-color: transparent;
-		border: 1px solid #F26376;
-		color: #F26376;
+		border: 1px solid $pink;
+		color: $pink;
 		transition: fill 500ms, background-color 500ms, color 500ms;
 
 		&:hover {
-			background-color: #F26376;
+			background-color: $pink;
 			color: #fff;
 			cursor: pointer;
 
@@ -201,7 +205,7 @@
 			position: absolute;
 			top: 11px;
 			left: 22px;
-			fill: #F26376;
+			fill: $pink;
 			transition: fill 500ms;
 		}
 	}

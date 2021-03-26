@@ -146,7 +146,7 @@
 		right: 0;
 		height: 765px;
 		background-color: $transparent;
-		z-index: 1;
+		z-index: 10;
 
 		&-wrapper {
 			position: absolute;
@@ -189,7 +189,7 @@
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 17px;
-			color: $dark-pink;
+			color: $pink;
 		}
 
 		&-item {

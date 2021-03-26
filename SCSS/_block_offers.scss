@@ -68,19 +68,19 @@
 		}
 
 		&-woman::after {
-			background-image: url(../img/offerImage01.png);
+			background-image: url(../img/offer_image01.jpg);
 			background-position: center center;
 			background-size: cover;
 		}
 
 		&-man::after {
-			background-image: url(../img/offerImage02.png);
+			background-image: url(../img/offer_image02.jpg);
 			background-position: center center;
 			background-size: cover;
 		}
 
 		&-kids::after {
-			background-image: url(../img/offerImage03.png);
+			background-image: url(../img/offer_image03.jpg);
 			background-position: center center;
 			background-size: cover;
 		}
@@ -96,7 +96,7 @@
 			}
 
 			&::after {
-				background-image: url(../img/offerImage04.png);
+				background-image: url(../img/offer_image04.jpg);
 				background-position: center center;
 				background-size: cover;
 			}
@@ -113,6 +113,6 @@
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 29px;
-		color: $dark-pink;
+		color: $pink;
 	}
 }
